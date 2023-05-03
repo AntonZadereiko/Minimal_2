@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Vollkorn&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +6,163 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 940px;
   margin: auto;
+}
+
+header {
+  padding: 18px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 520px) {
+  header .container {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 430px) {
+  header .container {
+    justify-content: space-between;
+  }
+}
+header .container .logo {
+  display: flex;
+  align-items: center;
+}
+header .container .logo a {
+  margin-right: 18px;
+}
+header .container .logo p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #333333;
+}
+header .container ul {
+  display: flex;
+}
+@media screen and (max-width: 520px) {
+  header .container ul {
+    display: block;
+  }
+}
+header .container ul li {
+  list-style: none;
+  margin-right: 34px;
+}
+@media screen and (max-width: 520px) {
+  header .container ul li {
+    margin-bottom: 10px;
+  }
+}
+header .container ul li:hover {
+  transform: scale(1.1);
+}
+header .container ul li:last-of-type {
+  margin-right: 0;
+}
+@media screen and (max-width: 960px) {
+  header .container ul li:last-of-type {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 520px) {
+  header .container ul li:last-of-type {
+    margin-right: 0;
+  }
+}
+header .container ul li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #404040;
+}
+
+.main_banner {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  padding-top: 105px;
+  min-height: 391px;
+}
+.main_banner .container h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+.main_banner .container p {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.81);
+}
+.main_banner .container .main_banner_photo {
+  max-width: 52px;
+  position: relative;
+  left: 435px;
+  bottom: -80px;
+}
+@media screen and (max-width: 915px) {
+  .main_banner .container .main_banner_photo {
+    left: 350px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .main_banner .container .main_banner_photo {
+    display: none;
+  }
+}
+
+.information {
+  padding: 60px 0;
+  background: #FEFEC9;
+}
+.information .container p {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #47474F;
+  margin-bottom: 39px;
+}
+.information .container .information_link {
+  max-width: 159px;
+  margin: auto;
+}
+.information .container .information_link a {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #47474F;
+  text-decoration: none;
+  padding: 15px 34px;
+  border: 1px solid #47474F;
+}
+.information .container .information_link a:hover {
+  background-color: lightsteelblue;
 }
 
 /*# sourceMappingURL=style.css.map */

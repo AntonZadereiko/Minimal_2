@@ -1,15 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Vollkorn&display=swap');
 
+$main_font: 'Montserrat', sans-serif;
+$second_font: 'Vollkorn', serif;
 
-
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
 .container{
-  max-width: 1200px;
+  max-width: 940px;
   margin: auto;
+}
+header{
+  padding: 18px 0;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include max-screen(520px){
+      justify-content: space-around;
+    }
+    @include max-screen(430px){
+      justify-content: space-between;
+    }
+    .logo{
+      display: flex;
+      align-items: center;
+      a{
+        margin-right: 18px;
+      }
+      p{
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 38px;
+        text-transform: uppercase;
+        color: #333333;
+      }
+    }
+    ul{
+      display: flex;
+      @include max-screen(520px){
+        display: block;
+      }
+      li{
+        list-style: none;
+        margin-right: 34px;
+        @include max-screen(520px){
+          margin-bottom: 10px;
+        }
+        &:hover{
+          transform: scale(1.1);
+        }
+        &:last-of-type{
+          margin-right: 0;
+          @include max-screen(960px){
+            margin-right: 10px;
+          }
+          @include max-screen(520px){
+            margin-right: 0;
+          }
+        }
+        a{
+          text-decoration: none;
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #404040;
+        }
+      }
+    }
+  }
+}
+.main_banner{
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  padding-top: 105px;
+  min-height: 391px;
+  .container{
+    h1{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 44px;
+      line-height: 55px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 50px;
+    }
+    p{
+      font-family: $second_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.81);
+    }
+    .main_banner_photo{
+      max-width: 52px;
+      position: relative;
+      left: 435px;
+      bottom: -80px;
+      @include max-screen(915px){
+        left: 350px;
+      }
+        @include max-screen(720px) {
+          display: none;
+        }
+    }
+  }
+}
+.information{
+  padding: 60px 0;
+  background: #FEFEC9;
+  .container{
+    p{
+      font-family: $second_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      color: #47474F;
+      margin-bottom: 39px;
+    }
+    .information_link{
+      max-width: 159px;
+      margin: auto;
+      a{
+        font-family: $second_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #47474F;
+        text-decoration: none;
+        padding: 15px 34px;
+        border: 1px solid #47474F;
+        &:hover{
+        background-color: lightsteelblue;
+        }
+      }
+    }
+  }
 }
