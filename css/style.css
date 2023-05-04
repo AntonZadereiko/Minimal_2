@@ -309,4 +309,84 @@ header .container ul li a {
   color: #333333;
 }
 
+.team {
+  padding: 79px 0 100px;
+}
+.team .container h3 {
+  margin-bottom: 73px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+.team .container .team_box {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 881px) {
+  .team .container .team_box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 439px) {
+  .team .container .team_box .team_items:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 659px) {
+  .team .container .team_box .team_items:nth-child(3) {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 879px) {
+  .team .container .team_box .team_items:last-of-type {
+    margin-top: 20px;
+  }
+}
+.team .container .team_box .team_items .team_photo {
+  max-width: 220px;
+  margin-bottom: 20px;
+}
+.team .container .team_box .team_items .team_photo img {
+  width: 100%;
+  display: block;
+}
+.team .container .team_box .team_items h4 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 6px;
+}
+.team .container .team_box .team_items p {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 29px;
+}
+.team .container .team_box .team_items .team_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team .container .team_box .team_items .team_links a {
+  margin-right: 20px;
+}
+.team .container .team_box .team_items .team_links a:last-of-type {
+  margin-right: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
