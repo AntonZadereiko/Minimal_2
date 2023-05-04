@@ -165,4 +165,148 @@ header .container ul li a {
   background-color: lightsteelblue;
 }
 
+.make_brands {
+  padding: 79px 0 74px;
+}
+.make_brands .container h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 55px;
+}
+.make_brands .container .make_brands_box {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 910px) {
+  .make_brands .container .make_brands_box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.make_brands .container .make_brands_box .make_brands_item {
+  max-width: 300px;
+}
+.make_brands .container .make_brands_box .make_brands_item .make_brands_image {
+  max-width: 300px;
+  margin-bottom: 38px;
+}
+.make_brands .container .make_brands_box .make_brands_item .make_brands_image img {
+  width: 100%;
+  display: block;
+}
+.make_brands .container .make_brands_box .make_brands_item h4 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.make_brands .container .make_brands_box .make_brands_item p {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #333333;
+}
+
+.projects {
+  padding: 79px 0 89px;
+  background: #F5F5F5;
+}
+.projects .container h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 73px;
+}
+.projects .container .projects_box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 900px) {
+  .projects .container .projects_box {
+    justify-content: space-around;
+  }
+}
+.projects .container .projects_box .projects_items {
+  max-width: 300px;
+}
+@media screen and (max-width: 600px) {
+  .projects .container .projects_box .projects_items:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .projects .container .projects_box .projects_items:nth-child(3) {
+    margin-top: 20px;
+  }
+}
+.projects .container .projects_box .projects_items:nth-child(4) {
+  margin-top: 20px;
+}
+.projects .container .projects_box .projects_items:nth-child(5) {
+  margin-top: 20px;
+}
+.projects .container .projects_box .projects_items:nth-child(6) {
+  margin-top: 20px;
+}
+.projects .container .projects_box .projects_items:nth-child(7) {
+  margin-top: 20px;
+}
+.projects .container .projects_box .projects_items:nth-child(8) {
+  margin-top: 20px;
+}
+.projects .container .projects_box .projects_items:last-of-type {
+  margin-top: 20px;
+}
+.projects .container .projects_box .projects_items .project_image {
+  max-width: 300px;
+}
+.projects .container .projects_box .projects_items .project_image img {
+  width: 100%;
+  display: block;
+}
+.projects .container .projects_box .projects_items .projects_text {
+  background-color: #FFFFFF;
+  padding: 20px 0;
+}
+.projects .container .projects_box .projects_items .projects_text h4 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 4px;
+}
+.projects .container .projects_box .projects_items .projects_text p {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+}
+
 /*# sourceMappingURL=style.css.map */
