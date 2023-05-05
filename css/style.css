@@ -389,4 +389,171 @@ header .container ul li a {
   margin-right: 0;
 }
 
+.touch {
+  background-image: url("../images/touch.jpg");
+  background-size: cover;
+  padding: 79px 0 75px;
+}
+.touch .container h3 {
+  margin-bottom: 53px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+.touch .container .touch_box {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 505px) {
+  .touch .container .touch_box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 361px) {
+  .touch .container .touch_box {
+    display: block;
+  }
+}
+.touch .container .touch_box .touch_items .touch_image {
+  max-width: 44px;
+  margin: auto;
+}
+.touch .container .touch_box .touch_items .touch_image img {
+  width: 100%;
+  display: block;
+}
+.touch .container .touch_box .touch_items h4 {
+  margin-top: 26px;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+.touch .container .touch_box .touch_items p {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  color: #212121;
+}
+@media screen and (max-width: 361px) {
+  .touch .container .touch_box .touch_contacts {
+    margin-top: 30px;
+  }
+}
+.touch .container .touch_box .touch_contacts .touch_contacts_image {
+  max-width: 70px;
+  margin: auto;
+}
+.touch .container .touch_box .touch_contacts .touch_contacts_image img {
+  width: 100%;
+  display: block;
+}
+.touch .container .touch_box .touch_contacts h4 {
+  margin-top: 41px;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+.touch .container .touch_box .touch_contacts p {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  color: #212121;
+}
+.touch .container .touch_box .touch_contacts p:nth-child(4) {
+  margin-bottom: 22px;
+}
+.touch .container .touch_box .touch_contacts p a {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  color: #212121;
+}
+@media screen and (max-width: 505px) {
+  .touch .container .touch_box .touch_social {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 361px) {
+  .touch .container .touch_box .touch_social {
+    margin-top: 30px;
+  }
+}
+.touch .container .touch_box .touch_social .touch_social_image {
+  max-width: 68px;
+  margin: auto;
+}
+.touch .container .touch_box .touch_social .touch_social_image img {
+  width: 100%;
+  display: block;
+}
+.touch .container .touch_box .touch_social h4 {
+  margin-top: 35px;
+  margin-bottom: 19px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+@media screen and (max-width: 361px) {
+  .touch .container .touch_box .touch_social ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.touch .container .touch_box .touch_social ul li {
+  margin-bottom: 11px;
+  list-style: none;
+}
+.touch .container .touch_box .touch_social ul li:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+.touch .container .touch_box .touch_social ul li:last-of-type {
+  margin-bottom: 0;
+}
+.touch .container .touch_box .touch_social ul li a {
+  text-decoration: none;
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #212121;
+}
+.touch .container .touch_box .touch_social ul li a img {
+  margin-right: 9px;
+}
+
 /*# sourceMappingURL=style.css.map */
