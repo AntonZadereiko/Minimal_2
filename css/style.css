@@ -249,6 +249,10 @@ header .container ul li a {
 .projects .container .projects_box .projects_items {
   max-width: 300px;
 }
+.projects .container .projects_box .projects_items:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
 @media screen and (max-width: 600px) {
   .projects .container .projects_box .projects_items:nth-child(2) {
     margin-top: 20px;
@@ -554,6 +558,100 @@ header .container ul li a {
 }
 .touch .container .touch_box .touch_social ul li a img {
   margin-right: 9px;
+}
+
+.contact_us {
+  padding: 69px 0 75px;
+  background-color: black;
+}
+.contact_us .container .contact_us_box {
+  max-width: 564px;
+  margin: auto;
+}
+@media screen and (max-width: 570px) {
+  .contact_us .container .contact_us_box form {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.contact_us .container .contact_us_box form .item {
+  max-width: 564px;
+}
+.contact_us .container .contact_us_box form .item input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.18);
+  padding-left: 31px;
+  height: 57px;
+  font-family: "Vollkorn", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #FFFFFF;
+  border: none;
+}
+.contact_us .container .contact_us_box form .item:nth-child(2) input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 31px;
+  height: 57px;
+  font-family: "Vollkorn", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #FFFFFF;
+  border: none;
+}
+.contact_us .container .contact_us_box form .item textarea {
+  height: 127px;
+  width: 100%;
+  padding-left: 31px;
+  padding-top: 17px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: "Vollkorn", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #FFFFFF;
+  border: none;
+  margin-bottom: 22px;
+}
+.contact_us .container .contact_us_box form .btn {
+  text-align: center;
+}
+.contact_us .container .contact_us_box form .btn button {
+  font-family: "Vollkorn", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  color: #8BCAC3;
+  padding: 16px 60px;
+  background-color: black;
+  border: solid;
+  cursor: pointer;
+  margin-bottom: 37px;
+}
+.contact_us .container .contact_us_image {
+  max-width: 43px;
+  margin: auto;
+}
+.contact_us .container .contact_us_image img {
+  width: 100%;
+  display: block;
+}
+.contact_us .container p {
+  margin-top: 14px;
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -237,6 +237,10 @@ header{
       }
       .projects_items{
         max-width: 300px;
+        &:hover{
+          transform: scale(1.1);
+          transition-duration: 0.5s;
+        }
         &:nth-child(2){
           @include max-screen(600px){
             margin-top: 20px;
@@ -322,6 +326,7 @@ header{
         justify-content: space-around;
       }
       .team_items{
+
         &:nth-child(2){
           @include max-screen(439px){
             margin-top: 20px;
@@ -542,6 +547,103 @@ header{
           }
         }
       }
+    }
+  }
+}
+.contact_us{
+  padding: 69px 0 75px;
+  background-color: black;
+  .container{
+    .contact_us_box{
+      max-width: 564px;
+      margin: auto;
+      form{
+        @include max-screen(570px){
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      .item{
+        max-width: 564px;
+        input{
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.18);
+          padding-left:  31px;
+          height: 57px;
+          font-family: $second_font;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 22px;
+          color: #FFFFFF;
+          border: none;
+        }
+        &:nth-child(2){
+          input{
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding-left:  31px;
+            height: 57px;
+            font-family: $second_font;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            color: #FFFFFF;
+            border: none;
+          }
+        }
+          textarea{
+          height: 127px;
+            width: 100%;
+            padding-left: 31px;
+            padding-top: 17px;
+            background-color: rgba(255, 255, 255, 0.2);
+            font-family: $second_font;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            color: #FFFFFF;
+            border: none;
+            margin-bottom: 22px;
+          }
+      }
+        .btn{
+          text-align: center;
+          button{
+            font-family:$second_font;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            text-align: center;
+            color: #8BCAC3;
+            padding: 16px 60px;
+            background-color: black;
+            border: solid;
+            cursor: pointer;
+            margin-bottom: 37px;
+          }
+        }
+      }
+    }
+    .contact_us_image{
+      max-width: 43px;
+      margin: auto;
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+    p{
+      margin-top: 14px;
+      font-family: $second_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.4);
     }
   }
 }
