@@ -158,10 +158,11 @@ header{
     }
   }
 }
-.make_brands{
+.make_brands {
   padding: 79px 0 74px;
-  .container{
-    h3{
+
+  .container {
+    h3 {
       font-family: $main_font;
       font-style: normal;
       font-weight: 400;
@@ -172,47 +173,54 @@ header{
       color: #333333;
       margin-bottom: 55px;
     }
-    .make_brands_box{
-      display: flex;
-      justify-content: space-between;
-      @include max-screen(910px){
-        flex-wrap: wrap;
-      justify-content: space-around;
-      }
-      .make_brands_item{
-        max-width: 300px;
-        .make_brands_image{
-        max-width: 300px;
-          margin-bottom: 38px;
-          img{
-            width: 100%;
-            display: block;
-          }
-      }
-        h4{
-          font-family: $main_font;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 20px;
-          text-align: center;
-          text-transform: uppercase;
-          color: #333333;
-          margin-bottom: 20px;
+
+
+      .make_brands_box {
+        display: flex;
+        justify-content: space-between;
+        @include max-screen(910px) {
+          flex-wrap: wrap;
+          justify-content: space-around;
         }
-        p{
-          font-family: $second_font;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 15px;
-          line-height: 22px;
-          text-align: center;
-          color: #333333;
+
+          .make_brands_item {
+            max-width: 300px;
+
+            .make_brands_image {
+              max-width: 300px;
+              margin-bottom: 38px;
+
+              img {
+                width: 100%;
+                display: block;
+              }
+            }
+
+            h4 {
+              font-family: $main_font;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 20px;
+              text-align: center;
+              text-transform: uppercase;
+              color: #333333;
+              margin-bottom: 20px;
+            }
+
+            p {
+              font-family: $second_font;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 22px;
+              text-align: center;
+              color: #333333;
+            }
+          }
         }
       }
     }
-  }
-}
 .projects{
   padding: 79px 0 89px;
   background: #F5F5F5;
@@ -644,6 +652,76 @@ header{
       line-height: 22px;
       text-align: center;
       color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+.review{
+  padding: 69px 0 98px;
+  background: #F5F5F5;
+  @include max-screen(673px){
+    padding-bottom: 78px;
+  }
+  .container{
+    .review_image{
+      margin: auto;
+      max-width: 62px;
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+    .review_box{
+      margin-top: 55px;
+      display: flex;
+      justify-content: space-around;
+      @include max-screen(673px){
+        flex-wrap: wrap;
+      }
+      hr{
+        border-width: 1px;
+        border-style: solid;
+        border-color:  rgba(0, 0, 0, 0.04);
+        @include max-screen(835px){
+          display: none;
+        }
+      }
+      .review_items{
+        &:first-of-type{
+          @include max-screen(673px){
+            margin-bottom: 50px;
+          }
+        }
+        h3{
+          max-width: 338px;
+          font-family: $second_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 26px;
+          line-height: 33px;
+          text-align: center;
+          color: #333333;
+          margin-bottom: 24px;
+        }
+        .review_items_photo{
+          max-width: 64px;
+          margin: auto;
+          img{
+            width: 100%;
+            display: block;
+          }
+        }
+        h4{
+          font-family: $main_font;
+          margin-top: 10px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #ABABAB;
+        }
+      }
     }
   }
 }
